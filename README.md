@@ -56,6 +56,9 @@ This workshop is divided into these parts:
 **Note:** This guide has been tested on Ubuntu Xenial, Yakkety and Zesty ***RASPBIAN STRETCH LITE
 
 You can install kubeadm easily this way:
+> I installed docker-ce as noted here: 
+> https://docs.docker.com/engine/installation/linux/docker-ce/debian/
+> removed 'docker.io' from 'apt-get' install line below
 
 ```bash
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -63,7 +66,7 @@ cat <<EOF > /etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 apt-get update
-apt-get install -y docker.io kubeadm
+apt-get install -y kubeadm
 ```
 
 You should do this on all machines you're planning to include in your cluster, and these commands are exactly the same regardless on which architecture you are on.
