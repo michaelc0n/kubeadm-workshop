@@ -53,7 +53,7 @@ This workshop is divided into these parts:
 
 **Note:** It's expected that you have basic knowledge about how Kubernetes and kubeadm work, because quite advanced concepts are covered in this workshop.
 
-**Note:** This guide has been tested on Ubuntu Xenial, Yakkety and Zesty
+**Note:** This guide has been tested on Ubuntu Xenial, Yakkety and Zesty ***RASPBIAN STRETCH LITE
 
 You can install kubeadm easily this way:
 
@@ -68,7 +68,7 @@ apt-get install -y docker.io kubeadm
 
 You should do this on all machines you're planning to include in your cluster, and these commands are exactly the same regardless on which architecture you are on.
 
-### Setting up your Kubernetes master
+### Setting up your Kubernetes master <<<
 
 SSH into your master node, and switch to the `root` account of the machine or use `sudo` everywhere below.
 
